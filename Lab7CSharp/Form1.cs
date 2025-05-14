@@ -32,7 +32,6 @@ namespace Lab7CSharp
             Graphics g = Graphics.FromImage(pictureBox1.Image);
             Pen pen = new Pen(Color.Black, 2);
 
-            // Визначаємо, який примітив вибрано
             if (rbLine.Checked)
             {
                 g.DrawLine(pen, startPoint, endPoint);
@@ -52,7 +51,7 @@ namespace Lab7CSharp
                 g.DrawEllipse(pen, new Rectangle(rect.X, rect.Y, size, size));
             }
 
-            pictureBox1.Invalidate(); // Оновлюємо картинку
+            pictureBox1.Invalidate(); 
         }
 
         private Rectangle GetRectangle(Point p1, Point p2)
@@ -65,10 +64,10 @@ namespace Lab7CSharp
             );
         }
 
-        // Додаємо цей метод, якщо його немає:
+    
         private void Form1_Load(object sender, EventArgs e)
         {
-            // Тут може бути код для завантаження форми, якщо потрібно
+
         }
     }
 }

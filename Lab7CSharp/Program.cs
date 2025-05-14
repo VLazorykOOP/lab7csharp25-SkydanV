@@ -10,7 +10,7 @@ namespace Lab7CSharp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1()); // запускає головну форму
+            Application.Run(new Form1()); 
         }
     }
 }
